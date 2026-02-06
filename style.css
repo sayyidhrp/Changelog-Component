@@ -1,0 +1,91 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== BODY ========== */
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  padding: 2rem;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.subtitle {
+  color: #777;
+  margin-bottom: 2rem;
+}
+.timeline {
+  position: relative;
+  margin-top: 2.5rem;
+}
+
+/* Garis tengah */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  left: 50%;
+  width: 2px;
+
+  background: #222;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.date {
+  text-align: center;
+  padding-right: 1rem;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.timeline-item h3 {
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #333
+  border-radius: 50%;
+  margin: 0 auto; 
+}
+.timeline-footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+.timeline-button {
+  background: black;
+  color: white;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 0.8rem 1.8rem;
+  font-size: 0.9rem;
+
+  cursor: pointer;
+}
+.timeline-button:hover {
+  background: #747474;
+  transform: translateY(-1px);
+}
